@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Utilisateur\\source\\repos\\APIBloc\\APIBloc\\APIBloc.csproj": {}
+    "C:\\Users\\Utilisateur\\Source\\Repos\\CESI-BLOC-API\\APIBloc\\APIBloc\\APIBloc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Utilisateur\\source\\repos\\APIBloc\\APIBloc\\APIBloc.csproj": {
+    "C:\\Users\\Utilisateur\\Source\\Repos\\CESI-BLOC-API\\APIBloc\\APIBloc\\APIBloc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Utilisateur\\source\\repos\\APIBloc\\APIBloc\\APIBloc.csproj",
+        "projectUniqueName": "C:\\Users\\Utilisateur\\Source\\Repos\\CESI-BLOC-API\\APIBloc\\APIBloc\\APIBloc.csproj",
         "projectName": "APIBloc",
-        "projectPath": "C:\\Users\\Utilisateur\\source\\repos\\APIBloc\\APIBloc\\APIBloc.csproj",
+        "projectPath": "C:\\Users\\Utilisateur\\Source\\Repos\\CESI-BLOC-API\\APIBloc\\APIBloc\\APIBloc.csproj",
         "packagesPath": "C:\\Users\\Utilisateur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Utilisateur\\source\\repos\\APIBloc\\APIBloc\\obj\\",
+        "outputPath": "C:\\Users\\Utilisateur\\Source\\Repos\\CESI-BLOC-API\\APIBloc\\APIBloc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Utilisateur\\AppData\\Roaming\\NuGet\\NuGet.Config",
