@@ -85,14 +85,6 @@
             this.lbNom = new System.Windows.Forms.Label();
             this.tbFilterFirstname = new System.Windows.Forms.TextBox();
             this.dgvEmployees = new System.Windows.Forms.DataGridView();
-            this.IDEmployee = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Firstname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lastname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Homephone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MobilePhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Service = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Site_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlContainerServices = new System.Windows.Forms.Panel();
             this.dgvServices = new System.Windows.Forms.DataGridView();
             this.IDService = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -103,6 +95,14 @@
             this.IDSite = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.City = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbSites = new System.Windows.Forms.Label();
+            this.IDEmployee = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Firstname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lastname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Homephone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MobilePhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Service = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Site_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlSideBar.SuspendLayout();
             this.pnlFicheSite.SuspendLayout();
             this.pnlFicheService.SuspendLayout();
@@ -128,7 +128,7 @@
             this.pnlSideBar.Controls.Add(this.pnlFicheService);
             this.pnlSideBar.Controls.Add(this.pnlFicheEmployee);
             this.pnlSideBar.Location = new System.Drawing.Point(1123, 0);
-            this.pnlSideBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlSideBar.Margin = new System.Windows.Forms.Padding(4);
             this.pnlSideBar.Name = "pnlSideBar";
             this.pnlSideBar.Size = new System.Drawing.Size(396, 853);
             this.pnlSideBar.TabIndex = 1;
@@ -142,7 +142,7 @@
             this.pnlFicheSite.Controls.Add(this.lbSiteEnteteFiche);
             this.pnlFicheSite.Controls.Add(this.btnAddSite);
             this.pnlFicheSite.Location = new System.Drawing.Point(0, 1116);
-            this.pnlFicheSite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlFicheSite.Margin = new System.Windows.Forms.Padding(4);
             this.pnlFicheSite.Name = "pnlFicheSite";
             this.pnlFicheSite.Size = new System.Drawing.Size(396, 357);
             this.pnlFicheSite.TabIndex = 2;
@@ -155,7 +155,7 @@
             this.btnDeleteSite.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnDeleteSite.ForeColor = System.Drawing.Color.White;
             this.btnDeleteSite.Location = new System.Drawing.Point(11, 271);
-            this.btnDeleteSite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDeleteSite.Margin = new System.Windows.Forms.Padding(4);
             this.btnDeleteSite.Name = "btnDeleteSite";
             this.btnDeleteSite.Size = new System.Drawing.Size(139, 48);
             this.btnDeleteSite.TabIndex = 36;
@@ -170,7 +170,7 @@
             this.btnSaveSite.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnSaveSite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnSaveSite.Location = new System.Drawing.Point(180, 271);
-            this.btnSaveSite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSaveSite.Margin = new System.Windows.Forms.Padding(4);
             this.btnSaveSite.Name = "btnSaveSite";
             this.btnSaveSite.Size = new System.Drawing.Size(199, 48);
             this.btnSaveSite.TabIndex = 34;
@@ -193,7 +193,7 @@
             // tbVilleSite
             // 
             this.tbVilleSite.Location = new System.Drawing.Point(165, 204);
-            this.tbVilleSite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbVilleSite.Margin = new System.Windows.Forms.Padding(4);
             this.tbVilleSite.Name = "tbVilleSite";
             this.tbVilleSite.Size = new System.Drawing.Size(212, 22);
             this.tbVilleSite.TabIndex = 32;
@@ -215,7 +215,7 @@
             this.btnAddSite.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnAddSite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnAddSite.Location = new System.Drawing.Point(240, 47);
-            this.btnAddSite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddSite.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddSite.Name = "btnAddSite";
             this.btnAddSite.Size = new System.Drawing.Size(140, 48);
             this.btnAddSite.TabIndex = 30;
@@ -232,7 +232,7 @@
             this.pnlFicheService.Controls.Add(this.lbServiceEnteteFiche);
             this.pnlFicheService.Controls.Add(this.btnAddService);
             this.pnlFicheService.Location = new System.Drawing.Point(0, 679);
-            this.pnlFicheService.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlFicheService.Margin = new System.Windows.Forms.Padding(4);
             this.pnlFicheService.Name = "pnlFicheService";
             this.pnlFicheService.Size = new System.Drawing.Size(396, 418);
             this.pnlFicheService.TabIndex = 1;
@@ -245,7 +245,7 @@
             this.btnDeleteService.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnDeleteService.ForeColor = System.Drawing.Color.White;
             this.btnDeleteService.Location = new System.Drawing.Point(11, 271);
-            this.btnDeleteService.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDeleteService.Margin = new System.Windows.Forms.Padding(4);
             this.btnDeleteService.Name = "btnDeleteService";
             this.btnDeleteService.Size = new System.Drawing.Size(139, 48);
             this.btnDeleteService.TabIndex = 35;
@@ -260,7 +260,7 @@
             this.btnSaveService.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnSaveService.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnSaveService.Location = new System.Drawing.Point(180, 271);
-            this.btnSaveService.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSaveService.Margin = new System.Windows.Forms.Padding(4);
             this.btnSaveService.Name = "btnSaveService";
             this.btnSaveService.Size = new System.Drawing.Size(199, 48);
             this.btnSaveService.TabIndex = 34;
@@ -283,7 +283,7 @@
             // tbServiceNom
             // 
             this.tbServiceNom.Location = new System.Drawing.Point(165, 204);
-            this.tbServiceNom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbServiceNom.Margin = new System.Windows.Forms.Padding(4);
             this.tbServiceNom.Name = "tbServiceNom";
             this.tbServiceNom.Size = new System.Drawing.Size(212, 22);
             this.tbServiceNom.TabIndex = 32;
@@ -305,7 +305,7 @@
             this.btnAddService.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnAddService.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnAddService.Location = new System.Drawing.Point(240, 47);
-            this.btnAddService.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddService.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddService.Name = "btnAddService";
             this.btnAddService.Size = new System.Drawing.Size(139, 48);
             this.btnAddService.TabIndex = 30;
@@ -336,7 +336,7 @@
             this.pnlFicheEmployee.Controls.Add(this.tbPrenomEmployee);
             this.pnlFicheEmployee.Controls.Add(this.lbEnteteFicheEmploye);
             this.pnlFicheEmployee.Location = new System.Drawing.Point(0, 0);
-            this.pnlFicheEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlFicheEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.pnlFicheEmployee.Name = "pnlFicheEmployee";
             this.pnlFicheEmployee.Size = new System.Drawing.Size(396, 650);
             this.pnlFicheEmployee.TabIndex = 0;
@@ -348,10 +348,10 @@
             this.btnDeleteEmployee.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnDeleteEmployee.ForeColor = System.Drawing.Color.White;
             this.btnDeleteEmployee.Location = new System.Drawing.Point(11, 572);
-            this.btnDeleteEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDeleteEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.btnDeleteEmployee.Name = "btnDeleteEmployee";
             this.btnDeleteEmployee.Size = new System.Drawing.Size(139, 48);
-            this.btnDeleteEmployee.TabIndex = 34;
+            this.btnDeleteEmployee.TabIndex = 60;
             this.btnDeleteEmployee.Text = "Supprimer";
             this.btnDeleteEmployee.UseVisualStyleBackColor = false;
             this.btnDeleteEmployee.Visible = false;
@@ -360,36 +360,36 @@
             // tbSiteEmployee
             // 
             this.tbSiteEmployee.Location = new System.Drawing.Point(165, 515);
-            this.tbSiteEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbSiteEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.tbSiteEmployee.Name = "tbSiteEmployee";
             this.tbSiteEmployee.ReadOnly = true;
             this.tbSiteEmployee.Size = new System.Drawing.Size(212, 22);
-            this.tbSiteEmployee.TabIndex = 33;
+            this.tbSiteEmployee.TabIndex = 35;
             // 
             // tbServiceEmployee
             // 
             this.tbServiceEmployee.Location = new System.Drawing.Point(165, 470);
-            this.tbServiceEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbServiceEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.tbServiceEmployee.Name = "tbServiceEmployee";
             this.tbServiceEmployee.ReadOnly = true;
             this.tbServiceEmployee.Size = new System.Drawing.Size(212, 22);
-            this.tbServiceEmployee.TabIndex = 32;
+            this.tbServiceEmployee.TabIndex = 30;
             // 
             // cbSiteEmployee
             // 
             this.cbSiteEmployee.FormattingEnabled = true;
             this.cbSiteEmployee.Location = new System.Drawing.Point(-96, 80);
-            this.cbSiteEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbSiteEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.cbSiteEmployee.Name = "cbSiteEmployee";
             this.cbSiteEmployee.Size = new System.Drawing.Size(212, 24);
-            this.cbSiteEmployee.TabIndex = 31;
+            this.cbSiteEmployee.TabIndex = 35;
             this.cbSiteEmployee.Visible = false;
             // 
             // cbServiceEmployee
             // 
             this.cbServiceEmployee.FormattingEnabled = true;
             this.cbServiceEmployee.Location = new System.Drawing.Point(-96, 47);
-            this.cbServiceEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbServiceEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.cbServiceEmployee.Name = "cbServiceEmployee";
             this.cbServiceEmployee.Size = new System.Drawing.Size(212, 24);
             this.cbServiceEmployee.TabIndex = 30;
@@ -402,10 +402,10 @@
             this.btnAddEmployee.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnAddEmployee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnAddEmployee.Location = new System.Drawing.Point(240, 47);
-            this.btnAddEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddEmployee.Name = "btnAddEmployee";
             this.btnAddEmployee.Size = new System.Drawing.Size(139, 48);
-            this.btnAddEmployee.TabIndex = 29;
+            this.btnAddEmployee.TabIndex = 1;
             this.btnAddEmployee.Text = "Ajouter";
             this.btnAddEmployee.UseVisualStyleBackColor = false;
             this.btnAddEmployee.Visible = false;
@@ -418,10 +418,10 @@
             this.btnSaveEmployee.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnSaveEmployee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnSaveEmployee.Location = new System.Drawing.Point(180, 572);
-            this.btnSaveEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSaveEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.btnSaveEmployee.Name = "btnSaveEmployee";
             this.btnSaveEmployee.Size = new System.Drawing.Size(199, 48);
-            this.btnSaveEmployee.TabIndex = 28;
+            this.btnSaveEmployee.TabIndex = 40;
             this.btnSaveEmployee.Text = "Enregistrer";
             this.btnSaveEmployee.UseVisualStyleBackColor = false;
             this.btnSaveEmployee.Visible = false;
@@ -454,29 +454,29 @@
             // tbMobilePhone
             // 
             this.tbMobilePhone.Location = new System.Drawing.Point(165, 340);
-            this.tbMobilePhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbMobilePhone.Margin = new System.Windows.Forms.Padding(4);
             this.tbMobilePhone.Name = "tbMobilePhone";
             this.tbMobilePhone.ReadOnly = true;
             this.tbMobilePhone.Size = new System.Drawing.Size(212, 22);
-            this.tbMobilePhone.TabIndex = 23;
+            this.tbMobilePhone.TabIndex = 20;
             // 
             // tbHomePhone
             // 
             this.tbHomePhone.Location = new System.Drawing.Point(165, 295);
-            this.tbHomePhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbHomePhone.Margin = new System.Windows.Forms.Padding(4);
             this.tbHomePhone.Name = "tbHomePhone";
             this.tbHomePhone.ReadOnly = true;
             this.tbHomePhone.Size = new System.Drawing.Size(212, 22);
-            this.tbHomePhone.TabIndex = 22;
+            this.tbHomePhone.TabIndex = 15;
             // 
             // tbEmail
             // 
             this.tbEmail.Location = new System.Drawing.Point(11, 425);
-            this.tbEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbEmail.Margin = new System.Windows.Forms.Padding(4);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.ReadOnly = true;
             this.tbEmail.Size = new System.Drawing.Size(367, 22);
-            this.tbEmail.TabIndex = 21;
+            this.tbEmail.TabIndex = 25;
             // 
             // label2
             // 
@@ -517,11 +517,11 @@
             // tbNomEmployee
             // 
             this.tbNomEmployee.Location = new System.Drawing.Point(165, 250);
-            this.tbNomEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbNomEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.tbNomEmployee.Name = "tbNomEmployee";
             this.tbNomEmployee.ReadOnly = true;
             this.tbNomEmployee.Size = new System.Drawing.Size(212, 22);
-            this.tbNomEmployee.TabIndex = 17;
+            this.tbNomEmployee.TabIndex = 10;
             // 
             // lbNomEmploye
             // 
@@ -550,11 +550,11 @@
             // tbPrenomEmployee
             // 
             this.tbPrenomEmployee.Location = new System.Drawing.Point(165, 205);
-            this.tbPrenomEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbPrenomEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.tbPrenomEmployee.Name = "tbPrenomEmployee";
             this.tbPrenomEmployee.ReadOnly = true;
             this.tbPrenomEmployee.Size = new System.Drawing.Size(212, 22);
-            this.tbPrenomEmployee.TabIndex = 14;
+            this.tbPrenomEmployee.TabIndex = 5;
             // 
             // lbEnteteFicheEmploye
             // 
@@ -655,7 +655,7 @@
             this.flpMain.Controls.Add(this.pnlContainerSites);
             this.flpMain.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flpMain.Location = new System.Drawing.Point(41, 134);
-            this.flpMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flpMain.Margin = new System.Windows.Forms.Padding(4);
             this.flpMain.Name = "flpMain";
             this.flpMain.Size = new System.Drawing.Size(1043, 1162);
             this.flpMain.TabIndex = 20;
@@ -669,7 +669,7 @@
             this.pnlContainerEmployees.Controls.Add(this.pnlRecherche);
             this.pnlContainerEmployees.Controls.Add(this.dgvEmployees);
             this.pnlContainerEmployees.Location = new System.Drawing.Point(4, 4);
-            this.pnlContainerEmployees.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlContainerEmployees.Margin = new System.Windows.Forms.Padding(4);
             this.pnlContainerEmployees.Name = "pnlContainerEmployees";
             this.pnlContainerEmployees.Size = new System.Drawing.Size(1039, 512);
             this.pnlContainerEmployees.TabIndex = 21;
@@ -701,7 +701,7 @@
             this.pnlRecherche.Controls.Add(this.lbNom);
             this.pnlRecherche.Controls.Add(this.tbFilterFirstname);
             this.pnlRecherche.Location = new System.Drawing.Point(0, 0);
-            this.pnlRecherche.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlRecherche.Margin = new System.Windows.Forms.Padding(4);
             this.pnlRecherche.Name = "pnlRecherche";
             this.pnlRecherche.Size = new System.Drawing.Size(1035, 230);
             this.pnlRecherche.TabIndex = 19;
@@ -710,7 +710,7 @@
             // 
             this.cbFilterSite.FormattingEnabled = true;
             this.cbFilterSite.Location = new System.Drawing.Point(613, 118);
-            this.cbFilterSite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbFilterSite.Margin = new System.Windows.Forms.Padding(4);
             this.cbFilterSite.Name = "cbFilterSite";
             this.cbFilterSite.Size = new System.Drawing.Size(244, 27);
             this.cbFilterSite.TabIndex = 16;
@@ -719,7 +719,7 @@
             // 
             this.cbFilterService.FormattingEnabled = true;
             this.cbFilterService.Location = new System.Drawing.Point(613, 59);
-            this.cbFilterService.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbFilterService.Margin = new System.Windows.Forms.Padding(4);
             this.cbFilterService.Name = "cbFilterService";
             this.cbFilterService.Size = new System.Drawing.Size(244, 27);
             this.cbFilterService.TabIndex = 15;
@@ -731,7 +731,7 @@
             this.btnRecherche.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnRecherche.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnRecherche.Location = new System.Drawing.Point(0, 175);
-            this.btnRecherche.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRecherche.Margin = new System.Windows.Forms.Padding(4);
             this.btnRecherche.Name = "btnRecherche";
             this.btnRecherche.Size = new System.Drawing.Size(199, 48);
             this.btnRecherche.TabIndex = 5;
@@ -742,7 +742,7 @@
             // tbFilterLastname
             // 
             this.tbFilterLastname.Location = new System.Drawing.Point(157, 118);
-            this.tbFilterLastname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbFilterLastname.Margin = new System.Windows.Forms.Padding(4);
             this.tbFilterLastname.Name = "tbFilterLastname";
             this.tbFilterLastname.Size = new System.Drawing.Size(245, 26);
             this.tbFilterLastname.TabIndex = 2;
@@ -810,7 +810,7 @@
             // tbFilterFirstname
             // 
             this.tbFilterFirstname.Location = new System.Drawing.Point(157, 59);
-            this.tbFilterFirstname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbFilterFirstname.Margin = new System.Windows.Forms.Padding(4);
             this.tbFilterFirstname.Name = "tbFilterFirstname";
             this.tbFilterFirstname.Size = new System.Drawing.Size(245, 26);
             this.tbFilterFirstname.TabIndex = 1;
@@ -836,7 +836,7 @@
             this.Service,
             this.Site_Column});
             this.dgvEmployees.Location = new System.Drawing.Point(0, 299);
-            this.dgvEmployees.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvEmployees.Margin = new System.Windows.Forms.Padding(4);
             this.dgvEmployees.MultiSelect = false;
             this.dgvEmployees.Name = "dgvEmployees";
             this.dgvEmployees.ReadOnly = true;
@@ -847,6 +847,144 @@
             this.dgvEmployees.Size = new System.Drawing.Size(1035, 209);
             this.dgvEmployees.TabIndex = 8;
             this.dgvEmployees.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployees_CellClick);
+            // 
+            // pnlContainerServices
+            // 
+            this.pnlContainerServices.AutoSize = true;
+            this.pnlContainerServices.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.pnlContainerServices.Controls.Add(this.dgvServices);
+            this.pnlContainerServices.Controls.Add(this.lbServices);
+            this.pnlContainerServices.Location = new System.Drawing.Point(4, 524);
+            this.pnlContainerServices.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlContainerServices.Name = "pnlContainerServices";
+            this.pnlContainerServices.Size = new System.Drawing.Size(1035, 260);
+            this.pnlContainerServices.TabIndex = 22;
+            this.pnlContainerServices.Visible = false;
+            // 
+            // dgvServices
+            // 
+            this.dgvServices.AllowUserToAddRows = false;
+            this.dgvServices.AllowUserToDeleteRows = false;
+            this.dgvServices.AllowUserToResizeRows = false;
+            this.dgvServices.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvServices.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(65)))), ((int)(((byte)(77)))));
+            this.dgvServices.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvServices.ColumnHeadersHeight = 35;
+            this.dgvServices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvServices.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IDService,
+            this.NameColumn});
+            this.dgvServices.Location = new System.Drawing.Point(0, 47);
+            this.dgvServices.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvServices.MultiSelect = false;
+            this.dgvServices.Name = "dgvServices";
+            this.dgvServices.ReadOnly = true;
+            this.dgvServices.RowHeadersVisible = false;
+            this.dgvServices.RowHeadersWidth = 51;
+            this.dgvServices.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.dgvServices.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvServices.Size = new System.Drawing.Size(1035, 209);
+            this.dgvServices.TabIndex = 22;
+            this.dgvServices.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServices_CellClick);
+            // 
+            // IDService
+            // 
+            this.IDService.HeaderText = "IDService";
+            this.IDService.MinimumWidth = 6;
+            this.IDService.Name = "IDService";
+            this.IDService.ReadOnly = true;
+            this.IDService.Visible = false;
+            this.IDService.Width = 200;
+            // 
+            // NameColumn
+            // 
+            this.NameColumn.HeaderText = "Service";
+            this.NameColumn.MinimumWidth = 6;
+            this.NameColumn.Name = "NameColumn";
+            this.NameColumn.ReadOnly = true;
+            this.NameColumn.Width = 200;
+            // 
+            // lbServices
+            // 
+            this.lbServices.AutoSize = true;
+            this.lbServices.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.lbServices.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(238)))), ((int)(((byte)(0)))));
+            this.lbServices.Location = new System.Drawing.Point(-7, 0);
+            this.lbServices.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbServices.Name = "lbServices";
+            this.lbServices.Size = new System.Drawing.Size(98, 30);
+            this.lbServices.TabIndex = 21;
+            this.lbServices.Text = "Services";
+            // 
+            // pnlContainerSites
+            // 
+            this.pnlContainerSites.AutoSize = true;
+            this.pnlContainerSites.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.pnlContainerSites.Controls.Add(this.dgvSites);
+            this.pnlContainerSites.Controls.Add(this.lbSites);
+            this.pnlContainerSites.Location = new System.Drawing.Point(4, 792);
+            this.pnlContainerSites.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlContainerSites.Name = "pnlContainerSites";
+            this.pnlContainerSites.Size = new System.Drawing.Size(1035, 260);
+            this.pnlContainerSites.TabIndex = 23;
+            this.pnlContainerSites.Visible = false;
+            // 
+            // dgvSites
+            // 
+            this.dgvSites.AllowUserToAddRows = false;
+            this.dgvSites.AllowUserToDeleteRows = false;
+            this.dgvSites.AllowUserToResizeRows = false;
+            this.dgvSites.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvSites.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(65)))), ((int)(((byte)(77)))));
+            this.dgvSites.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvSites.ColumnHeadersHeight = 35;
+            this.dgvSites.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvSites.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IDSite,
+            this.City});
+            this.dgvSites.Location = new System.Drawing.Point(0, 47);
+            this.dgvSites.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvSites.MultiSelect = false;
+            this.dgvSites.Name = "dgvSites";
+            this.dgvSites.ReadOnly = true;
+            this.dgvSites.RowHeadersVisible = false;
+            this.dgvSites.RowHeadersWidth = 51;
+            this.dgvSites.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.dgvSites.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvSites.Size = new System.Drawing.Size(1035, 209);
+            this.dgvSites.TabIndex = 22;
+            this.dgvSites.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSites_CellClick);
+            // 
+            // IDSite
+            // 
+            this.IDSite.HeaderText = "IDSite";
+            this.IDSite.MinimumWidth = 6;
+            this.IDSite.Name = "IDSite";
+            this.IDSite.ReadOnly = true;
+            this.IDSite.Visible = false;
+            this.IDSite.Width = 125;
+            // 
+            // City
+            // 
+            this.City.HeaderText = "Site";
+            this.City.MinimumWidth = 6;
+            this.City.Name = "City";
+            this.City.ReadOnly = true;
+            this.City.Width = 200;
+            // 
+            // lbSites
+            // 
+            this.lbSites.AutoSize = true;
+            this.lbSites.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.lbSites.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(238)))), ((int)(((byte)(0)))));
+            this.lbSites.Location = new System.Drawing.Point(-7, 0);
+            this.lbSites.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbSites.Name = "lbSites";
+            this.lbSites.Size = new System.Drawing.Size(62, 30);
+            this.lbSites.TabIndex = 21;
+            this.lbSites.Text = "Sites";
             // 
             // IDEmployee
             // 
@@ -905,151 +1043,13 @@
             this.Service.ReadOnly = true;
             this.Service.Width = 125;
             // 
-            // Site
+            // Site_Column
             // 
             this.Site_Column.HeaderText = "Site";
             this.Site_Column.MinimumWidth = 6;
-            this.Site_Column.Name = "Site";
+            this.Site_Column.Name = "Site_Column";
             this.Site_Column.ReadOnly = true;
             this.Site_Column.Width = 125;
-            // 
-            // pnlContainerServices
-            // 
-            this.pnlContainerServices.AutoSize = true;
-            this.pnlContainerServices.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.pnlContainerServices.Controls.Add(this.dgvServices);
-            this.pnlContainerServices.Controls.Add(this.lbServices);
-            this.pnlContainerServices.Location = new System.Drawing.Point(4, 524);
-            this.pnlContainerServices.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pnlContainerServices.Name = "pnlContainerServices";
-            this.pnlContainerServices.Size = new System.Drawing.Size(1035, 260);
-            this.pnlContainerServices.TabIndex = 22;
-            this.pnlContainerServices.Visible = false;
-            // 
-            // dgvServices
-            // 
-            this.dgvServices.AllowUserToAddRows = false;
-            this.dgvServices.AllowUserToDeleteRows = false;
-            this.dgvServices.AllowUserToResizeRows = false;
-            this.dgvServices.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvServices.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(65)))), ((int)(((byte)(77)))));
-            this.dgvServices.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvServices.ColumnHeadersHeight = 35;
-            this.dgvServices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvServices.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IDService,
-            this.NameColumn});
-            this.dgvServices.Location = new System.Drawing.Point(0, 47);
-            this.dgvServices.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dgvServices.MultiSelect = false;
-            this.dgvServices.Name = "dgvServices";
-            this.dgvServices.ReadOnly = true;
-            this.dgvServices.RowHeadersVisible = false;
-            this.dgvServices.RowHeadersWidth = 51;
-            this.dgvServices.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.dgvServices.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvServices.Size = new System.Drawing.Size(1035, 209);
-            this.dgvServices.TabIndex = 22;
-            this.dgvServices.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServices_CellClick);
-            // 
-            // IDService
-            // 
-            this.IDService.HeaderText = "IDService";
-            this.IDService.MinimumWidth = 6;
-            this.IDService.Name = "IDService";
-            this.IDService.ReadOnly = true;
-            this.IDService.Visible = false;
-            this.IDService.Width = 200;
-            // 
-            // NameColumn
-            // 
-            this.NameColumn.HeaderText = "Service";
-            this.NameColumn.MinimumWidth = 6;
-            this.NameColumn.Name = "NameColumn";
-            this.NameColumn.ReadOnly = true;
-            this.NameColumn.Width = 200;
-            // 
-            // lbServices
-            // 
-            this.lbServices.AutoSize = true;
-            this.lbServices.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
-            this.lbServices.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(238)))), ((int)(((byte)(0)))));
-            this.lbServices.Location = new System.Drawing.Point(-7, 0);
-            this.lbServices.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbServices.Name = "lbServices";
-            this.lbServices.Size = new System.Drawing.Size(98, 30);
-            this.lbServices.TabIndex = 21;
-            this.lbServices.Text = "Services";
-            // 
-            // pnlContainerSites
-            // 
-            this.pnlContainerSites.AutoSize = true;
-            this.pnlContainerSites.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.pnlContainerSites.Controls.Add(this.dgvSites);
-            this.pnlContainerSites.Controls.Add(this.lbSites);
-            this.pnlContainerSites.Location = new System.Drawing.Point(4, 792);
-            this.pnlContainerSites.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pnlContainerSites.Name = "pnlContainerSites";
-            this.pnlContainerSites.Size = new System.Drawing.Size(1035, 260);
-            this.pnlContainerSites.TabIndex = 23;
-            this.pnlContainerSites.Visible = false;
-            // 
-            // dgvSites
-            // 
-            this.dgvSites.AllowUserToAddRows = false;
-            this.dgvSites.AllowUserToDeleteRows = false;
-            this.dgvSites.AllowUserToResizeRows = false;
-            this.dgvSites.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvSites.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(65)))), ((int)(((byte)(77)))));
-            this.dgvSites.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvSites.ColumnHeadersHeight = 35;
-            this.dgvSites.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvSites.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IDSite,
-            this.City});
-            this.dgvSites.Location = new System.Drawing.Point(0, 47);
-            this.dgvSites.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dgvSites.MultiSelect = false;
-            this.dgvSites.Name = "dgvSites";
-            this.dgvSites.ReadOnly = true;
-            this.dgvSites.RowHeadersVisible = false;
-            this.dgvSites.RowHeadersWidth = 51;
-            this.dgvSites.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.dgvSites.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSites.Size = new System.Drawing.Size(1035, 209);
-            this.dgvSites.TabIndex = 22;
-            this.dgvSites.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSites_CellClick);
-            // 
-            // IDSite
-            // 
-            this.IDSite.HeaderText = "IDSite";
-            this.IDSite.MinimumWidth = 6;
-            this.IDSite.Name = "IDSite";
-            this.IDSite.ReadOnly = true;
-            this.IDSite.Visible = false;
-            this.IDSite.Width = 125;
-            // 
-            // City
-            // 
-            this.City.HeaderText = "Site";
-            this.City.MinimumWidth = 6;
-            this.City.Name = "City";
-            this.City.ReadOnly = true;
-            this.City.Width = 200;
-            // 
-            // lbSites
-            // 
-            this.lbSites.AutoSize = true;
-            this.lbSites.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
-            this.lbSites.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(238)))), ((int)(((byte)(0)))));
-            this.lbSites.Location = new System.Drawing.Point(-7, 0);
-            this.lbSites.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbSites.Name = "lbSites";
-            this.lbSites.Size = new System.Drawing.Size(62, 30);
-            this.lbSites.TabIndex = 21;
-            this.lbSites.Text = "Sites";
             // 
             // MainPage
             // 
@@ -1061,7 +1061,7 @@
             this.Controls.Add(this.pnlSideBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "MainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1135,13 +1135,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbServiceEmployee;
         private System.Windows.Forms.Button btnSaveEmployee;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IDEmployee;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Firstname;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Lastname;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Homephone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MobilePhone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Service;
         private System.Windows.Forms.Button btnAddEmployee;
         private System.Windows.Forms.Panel pnlFicheService;
         private System.Windows.Forms.Button btnAddService;
@@ -1164,8 +1157,15 @@
         private System.Windows.Forms.TextBox tbSiteEmployee;
         private System.Windows.Forms.TextBox tbServiceEmployee;
         private System.Windows.Forms.Button btnDeleteEmployee;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Site_Column;
         private System.Windows.Forms.Button btnDeleteSite;
         private System.Windows.Forms.Button btnDeleteService;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IDEmployee;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Firstname;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Lastname;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Homephone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MobilePhone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Service;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Site_Column;
     }
 }

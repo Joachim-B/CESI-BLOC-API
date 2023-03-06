@@ -237,8 +237,8 @@ namespace ClientLourdBloc
             tbEmail.Text = dgvEmployees["Email", rowIndex].Value.ToString();
             tbServiceEmployee.Text = dgvEmployees["Service", rowIndex].Value.ToString();
             cbServiceEmployee.Text = dgvEmployees["Service", rowIndex].Value.ToString();
-            tbSiteEmployee.Text = dgvEmployees["Site", rowIndex].Value.ToString();
-            cbSiteEmployee.Text = dgvEmployees["Site", rowIndex].Value.ToString();
+            tbSiteEmployee.Text = dgvEmployees["Site_Column", rowIndex].Value.ToString();
+            cbSiteEmployee.Text = dgvEmployees["Site_Column", rowIndex].Value.ToString();
         }
 
         private void dgvServices_CellClick(object sender, DataGridViewCellEventArgs e)
