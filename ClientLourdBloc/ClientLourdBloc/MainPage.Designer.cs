@@ -85,6 +85,14 @@
             this.lbNom = new System.Windows.Forms.Label();
             this.tbFilterFirstname = new System.Windows.Forms.TextBox();
             this.dgvEmployees = new System.Windows.Forms.DataGridView();
+            this.IDEmployee = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Firstname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lastname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Homephone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MobilePhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Service = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Site_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlContainerServices = new System.Windows.Forms.Panel();
             this.dgvServices = new System.Windows.Forms.DataGridView();
             this.IDService = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -95,14 +103,6 @@
             this.IDSite = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.City = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbSites = new System.Windows.Forms.Label();
-            this.IDEmployee = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Firstname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lastname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Homephone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MobilePhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Service = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Site_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlSideBar.SuspendLayout();
             this.pnlFicheSite.SuspendLayout();
             this.pnlFicheService.SuspendLayout();
@@ -822,6 +822,7 @@
             this.dgvEmployees.AllowUserToResizeRows = false;
             this.dgvEmployees.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvEmployees.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvEmployees.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(65)))), ((int)(((byte)(77)))));
             this.dgvEmployees.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvEmployees.ColumnHeadersHeight = 35;
@@ -847,6 +848,63 @@
             this.dgvEmployees.Size = new System.Drawing.Size(1035, 209);
             this.dgvEmployees.TabIndex = 8;
             this.dgvEmployees.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployees_CellClick);
+            // 
+            // IDEmployee
+            // 
+            this.IDEmployee.HeaderText = "IDEmployee";
+            this.IDEmployee.MinimumWidth = 6;
+            this.IDEmployee.Name = "IDEmployee";
+            this.IDEmployee.ReadOnly = true;
+            this.IDEmployee.Visible = false;
+            // 
+            // Firstname
+            // 
+            this.Firstname.HeaderText = "Prénom";
+            this.Firstname.MinimumWidth = 6;
+            this.Firstname.Name = "Firstname";
+            this.Firstname.ReadOnly = true;
+            // 
+            // Lastname
+            // 
+            this.Lastname.HeaderText = "Nom";
+            this.Lastname.MinimumWidth = 6;
+            this.Lastname.Name = "Lastname";
+            this.Lastname.ReadOnly = true;
+            // 
+            // Homephone
+            // 
+            this.Homephone.HeaderText = "Téléphone fixe";
+            this.Homephone.MinimumWidth = 6;
+            this.Homephone.Name = "Homephone";
+            this.Homephone.ReadOnly = true;
+            // 
+            // MobilePhone
+            // 
+            this.MobilePhone.HeaderText = "Téléphone portable";
+            this.MobilePhone.MinimumWidth = 6;
+            this.MobilePhone.Name = "MobilePhone";
+            this.MobilePhone.ReadOnly = true;
+            // 
+            // Email
+            // 
+            this.Email.HeaderText = "Adresse mail";
+            this.Email.MinimumWidth = 6;
+            this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
+            // 
+            // Service
+            // 
+            this.Service.HeaderText = "Service";
+            this.Service.MinimumWidth = 6;
+            this.Service.Name = "Service";
+            this.Service.ReadOnly = true;
+            // 
+            // Site_Column
+            // 
+            this.Site_Column.HeaderText = "Site";
+            this.Site_Column.MinimumWidth = 6;
+            this.Site_Column.Name = "Site_Column";
+            this.Site_Column.ReadOnly = true;
             // 
             // pnlContainerServices
             // 
@@ -985,71 +1043,6 @@
             this.lbSites.Size = new System.Drawing.Size(62, 30);
             this.lbSites.TabIndex = 21;
             this.lbSites.Text = "Sites";
-            // 
-            // IDEmployee
-            // 
-            this.IDEmployee.HeaderText = "IDEmployee";
-            this.IDEmployee.MinimumWidth = 6;
-            this.IDEmployee.Name = "IDEmployee";
-            this.IDEmployee.ReadOnly = true;
-            this.IDEmployee.Visible = false;
-            this.IDEmployee.Width = 125;
-            // 
-            // Firstname
-            // 
-            this.Firstname.HeaderText = "Prénom";
-            this.Firstname.MinimumWidth = 6;
-            this.Firstname.Name = "Firstname";
-            this.Firstname.ReadOnly = true;
-            this.Firstname.Width = 125;
-            // 
-            // Lastname
-            // 
-            this.Lastname.HeaderText = "Nom";
-            this.Lastname.MinimumWidth = 6;
-            this.Lastname.Name = "Lastname";
-            this.Lastname.ReadOnly = true;
-            this.Lastname.Width = 125;
-            // 
-            // Homephone
-            // 
-            this.Homephone.HeaderText = "Téléphone fixe";
-            this.Homephone.MinimumWidth = 6;
-            this.Homephone.Name = "Homephone";
-            this.Homephone.ReadOnly = true;
-            this.Homephone.Width = 125;
-            // 
-            // MobilePhone
-            // 
-            this.MobilePhone.HeaderText = "Téléphone portable";
-            this.MobilePhone.MinimumWidth = 6;
-            this.MobilePhone.Name = "MobilePhone";
-            this.MobilePhone.ReadOnly = true;
-            this.MobilePhone.Width = 125;
-            // 
-            // Email
-            // 
-            this.Email.HeaderText = "Adresse mail";
-            this.Email.MinimumWidth = 6;
-            this.Email.Name = "Email";
-            this.Email.ReadOnly = true;
-            this.Email.Width = 125;
-            // 
-            // Service
-            // 
-            this.Service.HeaderText = "Service";
-            this.Service.MinimumWidth = 6;
-            this.Service.Name = "Service";
-            this.Service.ReadOnly = true;
-            this.Service.Width = 125;
-            // 
-            // Site_Column
-            // 
-            this.Site_Column.HeaderText = "Site";
-            this.Site_Column.MinimumWidth = 6;
-            this.Site_Column.Name = "Site_Column";
-            this.Site_Column.ReadOnly = true;
-            this.Site_Column.Width = 125;
             // 
             // MainPage
             // 

@@ -210,6 +210,7 @@ namespace ClientLourdBloc
 
         private void btnRecherche_Click(object sender, EventArgs e)
         {
+            ResetFicheEmployee();
             LoadFilteredEmployees();
         }
 
@@ -282,7 +283,7 @@ namespace ClientLourdBloc
         // Source : https://stackoverflow.com/questions/400113/best-way-to-implement-keyboard-shortcuts-in-a-windows-forms-application
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
-            if (keyData == (Keys.F12))
+            if (keyData == (Keys.Control | Keys.F12))
             {
                 AdminLoginPage adminLogin = new AdminLoginPage();
 

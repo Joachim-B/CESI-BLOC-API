@@ -49,11 +49,11 @@ namespace APIBloc.Controllers
 
             return Ok(result);
         }
-        /*
+        
         [HttpPost("Multiple")]
-        public IActionResult PostMultiple(List<JsonTruc> value)
+        public IActionResult PostMultiple(List<RandomUserObject> value)
         {
-            foreach (JsonTruc item in value)
+            foreach (RandomUserObject item in value)
             {
                 Employee employee = new Employee()
                 {
@@ -73,22 +73,22 @@ namespace APIBloc.Controllers
             return Ok();
         }
 
-        public class JsonTruc
+        public class RandomUserObject
         {
-            public JsonName name { get; set; }
+            public RandomUserNameObject name { get; set; }
             public string email { get; set; }
             public string phone { get; set; }
             public string cell { get; set; }
         }
 
-        public class JsonName
+        public class RandomUserNameObject
         {
             public string title { get; set; }
             public string first { get; set; }
             public string last { get; set; }
 
         }
-        */
+        
 
         [HttpPut("{id}")]
         public IActionResult Put(int id, Employee value)
