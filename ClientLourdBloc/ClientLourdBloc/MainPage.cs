@@ -219,6 +219,7 @@ namespace ClientLourdBloc
 
             if (rowIndex == -1)
             {
+                ResetFicheEmployee();
                 return;
             }
 
@@ -246,6 +247,7 @@ namespace ClientLourdBloc
 
             if (rowIndex == -1)
             {
+                ResetFicheService();
                 return;
             }
             addRow = false;
@@ -262,6 +264,7 @@ namespace ClientLourdBloc
 
             if (rowIndex == -1)
             {
+                ResetFicheSite();
                 return;
             }
             addRow = false;

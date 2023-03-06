@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Infrastructure;
-using MySql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
 using System.Data;
 
 namespace APIBloc
@@ -8,6 +6,12 @@ namespace APIBloc
     public static class DBConnection
     {
         #region Data
+
+        private static string host = "localhost";
+        private static int port = 3306;
+        private static string database = "annuaire";
+        private static string username = "root";
+        private static string password = "root";
 
         private static MySqlConnection Connection { get; set; } = new();
 
@@ -17,12 +21,6 @@ namespace APIBloc
 
         static DBConnection()
         {
-            string host = "localhost";
-            int port = 3306;
-            string database = "annuaire";
-            string username = "root";
-            string password = "root";
-
             Connection = new MySqlConnection($"host = {host}; port = {port}; database = {database}; username = {username}; password = {password}");
 
             try
@@ -77,7 +75,7 @@ namespace APIBloc
                 mySqlCommand.ExecuteNonQuery();
                 insertedId = (int)mySqlCommand.LastInsertedId;
             }
-            catch(Exception)
+            catch (Exception)
             {
                 return false;
             }

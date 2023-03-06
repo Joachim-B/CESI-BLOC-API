@@ -72,7 +72,7 @@ namespace APIBloc.Controllers
                 return StatusCode(500);
 
             if (!canDelete)
-                return BadRequest("Cannot remove this row.");
+                return BadRequest("Cannot delete this row.");
 
             if (!ServiceService.Delete(id))
                 return StatusCode(500);

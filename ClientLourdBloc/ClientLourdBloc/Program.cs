@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClientLourdBloc.API;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,6 +15,16 @@ namespace ClientLourdBloc
         [STAThread]
         static void Main()
         {
+            try
+            {
+                APIRequest.GetAllSites();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Echec de la connexion à l'API !","Erreur !", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainPage());
