@@ -72,6 +72,7 @@
             this.lbBtnEmployee = new System.Windows.Forms.Label();
             this.flpMain = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlContainerEmployees = new System.Windows.Forms.Panel();
+            this.lbNombreSalarie = new System.Windows.Forms.Label();
             this.lbEmployee = new System.Windows.Forms.Label();
             this.pnlRecherche = new System.Windows.Forms.Panel();
             this.cbFilterSite = new System.Windows.Forms.ComboBox();
@@ -103,6 +104,8 @@
             this.IDSite = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.City = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbSites = new System.Windows.Forms.Label();
+            this.lbNombreServices = new System.Windows.Forms.Label();
+            this.lbNombreSites = new System.Windows.Forms.Label();
             this.pnlSideBar.SuspendLayout();
             this.pnlFicheSite.SuspendLayout();
             this.pnlFicheService.SuspendLayout();
@@ -665,6 +668,7 @@
             // 
             this.pnlContainerEmployees.AutoSize = true;
             this.pnlContainerEmployees.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.pnlContainerEmployees.Controls.Add(this.lbNombreSalarie);
             this.pnlContainerEmployees.Controls.Add(this.lbEmployee);
             this.pnlContainerEmployees.Controls.Add(this.pnlRecherche);
             this.pnlContainerEmployees.Controls.Add(this.dgvEmployees);
@@ -673,6 +677,17 @@
             this.pnlContainerEmployees.Name = "pnlContainerEmployees";
             this.pnlContainerEmployees.Size = new System.Drawing.Size(1039, 512);
             this.pnlContainerEmployees.TabIndex = 21;
+            // 
+            // lbNombreSalarie
+            // 
+            this.lbNombreSalarie.AutoSize = true;
+            this.lbNombreSalarie.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.lbNombreSalarie.ForeColor = System.Drawing.Color.White;
+            this.lbNombreSalarie.Location = new System.Drawing.Point(104, 256);
+            this.lbNombreSalarie.Name = "lbNombreSalarie";
+            this.lbNombreSalarie.Size = new System.Drawing.Size(101, 23);
+            this.lbNombreSalarie.TabIndex = 21;
+            this.lbNombreSalarie.Text = "Nombre : 0";
             // 
             // lbEmployee
             // 
@@ -910,6 +925,7 @@
             // 
             this.pnlContainerServices.AutoSize = true;
             this.pnlContainerServices.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.pnlContainerServices.Controls.Add(this.lbNombreServices);
             this.pnlContainerServices.Controls.Add(this.dgvServices);
             this.pnlContainerServices.Controls.Add(this.lbServices);
             this.pnlContainerServices.Location = new System.Drawing.Point(4, 524);
@@ -979,6 +995,7 @@
             // 
             this.pnlContainerSites.AutoSize = true;
             this.pnlContainerSites.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.pnlContainerSites.Controls.Add(this.lbNombreSites);
             this.pnlContainerSites.Controls.Add(this.dgvSites);
             this.pnlContainerSites.Controls.Add(this.lbSites);
             this.pnlContainerSites.Location = new System.Drawing.Point(4, 792);
@@ -1043,6 +1060,28 @@
             this.lbSites.Size = new System.Drawing.Size(62, 30);
             this.lbSites.TabIndex = 21;
             this.lbSites.Text = "Sites";
+            // 
+            // lbNombreServices
+            // 
+            this.lbNombreServices.AutoSize = true;
+            this.lbNombreServices.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.lbNombreServices.ForeColor = System.Drawing.Color.White;
+            this.lbNombreServices.Location = new System.Drawing.Point(104, 6);
+            this.lbNombreServices.Name = "lbNombreServices";
+            this.lbNombreServices.Size = new System.Drawing.Size(101, 23);
+            this.lbNombreServices.TabIndex = 23;
+            this.lbNombreServices.Text = "Nombre : 0";
+            // 
+            // lbNombreSite
+            // 
+            this.lbNombreSites.AutoSize = true;
+            this.lbNombreSites.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.lbNombreSites.ForeColor = System.Drawing.Color.White;
+            this.lbNombreSites.Location = new System.Drawing.Point(104, 6);
+            this.lbNombreSites.Name = "lbNombreSite";
+            this.lbNombreSites.Size = new System.Drawing.Size(101, 23);
+            this.lbNombreSites.TabIndex = 24;
+            this.lbNombreSites.Text = "Nombre : 0";
             // 
             // MainPage
             // 
@@ -1160,5 +1199,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn Service;
         private System.Windows.Forms.DataGridViewTextBoxColumn Site_Column;
+        private System.Windows.Forms.Label lbNombreSalarie;
+        private System.Windows.Forms.Label lbNombreServices;
+        private System.Windows.Forms.Label lbNombreSites;
     }
 }

@@ -124,6 +124,8 @@ namespace ClientLourdBloc
                 dgvEmployees.Rows.Add(employee.IDEmployee, employee.Firstname, employee.Lastname, employee.HomePhone, employee.MobilePhone, employee.Email, employee.Service.Name, employee.Site.City);
                 dgvEmployees.Height += rowHeight;
             }
+
+            lbNombreSalarie.Text = "Nombre : " + employees.Count;
         }
 
         private void LoadServiceDataGridView(List<Service> services)
@@ -139,6 +141,8 @@ namespace ClientLourdBloc
                 dgvServices.Rows.Add(service.IDService, service.Name);
                 dgvServices.Height += rowHeight;
             }
+
+            lbNombreServices.Text = "Nombre : " + services.Count;
         }
 
         private void LoadSiteDataGridView(List<Site> sites)
@@ -154,6 +158,8 @@ namespace ClientLourdBloc
                 dgvSites.Rows.Add(site.IDSite, site.City);
                 dgvSites.Height += rowHeight;
             }
+
+            lbNombreSites.Text = "Nombre : " + sites.Count;
         }
 
         #endregion
@@ -409,6 +415,8 @@ namespace ClientLourdBloc
             tbHomePhone.Text = "";
             tbMobilePhone.Text = "";
             tbEmail.Text = "";
+            tbServiceEmployee.Text = "";
+            tbSiteEmployee.Text = "";
             cbServiceEmployee.SelectedIndex = 0;
             cbSiteEmployee.SelectedIndex = 0;
         }
